@@ -14,7 +14,7 @@ export default function Projects() {
 			description:
 				"TalentFlow est une solution complète de gestion des ressources humaines qui simplifie la gestion des employés, des postes, des absences, du recrutement, des performances, de la paie, de la formation, des horaires, de la sécurité des données, des rapports, des intégrations, le tout avec une interface conviviale, une accessibilité pour tous les employés et une personnalisation adaptée aux besoins de chaque entreprise.",
 			date: "2023",
-			href: "/talenflow",
+			href: "https://github.com/UgolinOlle/talenflow",
 			img: talent_flow,
 			tags: [
 				"In progress",
@@ -31,16 +31,16 @@ export default function Projects() {
 			description:
 				"Une fonction essentielle pour la manipulation de fichiers en C, get_next_line permet de lire un fichier ligne par ligne de manière efficace, simplifiant ainsi le traitement de données textuelles.",
 			date: "2023",
-			href: "/get_next_line",
+			href: "https://github.com/UgolinOlle/get_next_line",
 			img: school_logo,
 			tags: ["Finish", "Makefile", "C"],
 		},
 		{
-			label: "printf",
+			label: "ft_printf",
 			description:
-				"L'indispensable printf de l'École 42 offre une puissante capacité de formatage pour l'affichage de données, permettant une gestion précise de l'output, un outil essentiel pour les projets de programmation en C.",
+				"L'indispensable ft_printf de l'École 42 offre une puissante capacité de formatage pour l'affichage de données, permettant une gestion précise de l'output, un outil essentiel pour les projets de programmation en C.",
 			date: "2023",
-			href: "/printf",
+			href: "https://github.com/UgolinOlle/ft_printf",
 			img: school_logo,
 			tags: ["Finish", "Makefile", "C"],
 		},
@@ -49,16 +49,16 @@ export default function Projects() {
 			description:
 				"Pipex, une solution polyvalente de redirection de flux, permet aux étudiants d'École 42 de manipuler les entrées/sorties de fichiers avec précision, jouant un rôle clé dans la construction de pipelines de commandes Unix.",
 			date: "2023",
-			href: "/pipex",
+			href: "https://github.com/UgolinOlle/pipex",
 			img: school_logo,
-			tags: ["Finish", "Makefile", "C"],
+			tags: ["In progress", "Makefile", "C"],
 		},
 		{
 			label: "libft",
 			description:
 				"Libft, une bibliothèque C fondamentale d'École 42, fournit une collection variée de fonctions standard et personnalisées. Elle offre aux étudiants une base solide pour le développement en C, facilitant la création de projets plus complexes grâce à des fonctionnalités telles que la gestion des chaînes de caractères, des listes chaînées, et bien plus encore.",
 			date: "2023",
-			href: "/libft",
+			href: "https://github.com/UgolinOlle/libft",
 			img: school_logo,
 			tags: ["Finish", "Makefile", "C"],
 		},
