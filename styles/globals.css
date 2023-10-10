@@ -2,26 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+	/* --------------- THEME --------------- */
+
+	.light-theme .prose {
+		--tw-prose-headings: var(--gray12);
+		--tw-prose-body: var(--gray12);
+		--tw-prose-bold: var(--gray12);
+		--tw-prose-links: var(--gray12);
+		--tw-prose-code: var(--gray12);
+		--tw-prose-quotes: var(--gray12);
+	}
+
+	.dark-theme {
+		--blurBackground: rgb(0 0 0 / 95%);
+		--gray1: #101010;
+	}
+
+	.dark-theme .prose {
+		--tw-prose-headings: var(--gray12);
+		--tw-prose-body: var(--gray11);
+		--tw-prose-bold: var(--gray11);
+		--tw-prose-links: var(--gray11);
+		--tw-prose-code: var(--gray11);
+		--tw-prose-quotes: var(--gray11);
+	}
+
+	.light-theme .prose {
+		--tw-prose-headings: var(--gray12);
+	}
+
+	.dark-theme {
+		--blurBackground: rgb(0 0 0 / 95%);
+	}
+
+	body {
+		overflow-x: hidden;
+		background-color: var(--bg);
+	}
+
+	.main-header {
+		-webkit-tap-highlight-color: transparent;
+	}
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@media (hover: hover) {
+	.animated-list:hover li {
+		opacity: 0.5;
+	}
+
+	.no-animated-list:hover li {
+		opacity: 1;
+	}
+
+	.animated-list:hover li:hover {
+		opacity: 1;
+	}
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.animate-in {
+	animation-delay: calc(var(--index) * 130ms);
 }
