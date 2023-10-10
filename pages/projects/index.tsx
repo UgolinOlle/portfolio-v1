@@ -76,9 +76,9 @@ export default function Projects() {
 						{projects.map((project) => (
 							<li
 								key={project.label}
-								className="flex transition-opacity gap-3 py-10 border-b-primary border-b-[1px]"
+								className="flex flex-col md:flex-row transition-opacity gap-3 py-10 border-b-primary border-b-[1px]"
 							>
-								<div className="w-1/2 h-1/2 px-5">
+								<div className="md:w-1/2 h-[400px] md:h-1/2 px-5">
 									<Image
 										src={project.img}
 										alt={project.label}
@@ -98,10 +98,10 @@ export default function Projects() {
 											<BsArrowUpRight className="ml-2 font-bold" />
 										</Link>
 									</div>
-									<p className="text-secondary pt-5 w-2/3 text-justify">
+									<p className="text-secondary pt-5 md:w-2/3 text-justify">
 										{project.description}
 									</p>
-									<ul className="flex flex-row flex-wrap justify-start items-center pt-5 w-2/3">
+									<ul className="flex flex-row flex-wrap justify-start items-center pt-5 md:w-2/3">
 										{project.tags.map((tag) => (
 											<li
 												key={tag}

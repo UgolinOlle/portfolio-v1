@@ -71,12 +71,12 @@ export default function About() {
 		{
 			label: "We Are Pirates",
 			content:
-				"Super échange avec Ugolin, il est réactif, à l'écoute et surtout très professionnel !",
+				"Great exchange with Ugolin, he is responsive, attentive and above all very professional!",
 			author: "Thomas Amusan",
 		},
 		{
 			label: "Boookable",
-			content: `Ugolin m'a accompagné dans le cadre de la préparation d'un projet de création d'application mobile. Ugolin a fait preuve de beaucoup d'écoute pour bien comprendre mon projet et mes souhaits en termes de fonctionnalités produit. Il n'a pas cherché à "imposer" ses idées mais au contraire, il m'a fait plusieurs propositions. Celles-ci étaient claires et pragmatiques et tout à fait adaptées à mon besoin. J'ai par ailleurs particulièrement apprécié mes échanges avec Ugolin qui, au-delà de son expertise technique, est une personne fort sympathique. Je recommande donc Ugolin !`,
+			content: `Ugolin helped me prepare a project to create a mobile application. Ugolin listened carefully to understand my project and my wishes in terms of product functionality. He didn't try to "impose" his ideas; on the contrary, he made several proposals. These were clear and pragmatic, and perfectly suited to my needs. What's more, I particularly enjoyed my discussions with Ugolin, who, over and above his technical expertise, is a very friendly person. I can't recommend Ugolin enough!`,
 			author: "Abdessalem Abaidi",
 		},
 	];
@@ -213,6 +213,7 @@ export default function About() {
 						))}
 					</ul>
 				</Section>
+				<div className="border border-t-[1px] border-tertiary"></div>
 				<Section heading="Advice">
 					<ul className="flex flex-col justify-between items-start space-y-5 lg:w-1/2">
 						{feedbacks.map((feedback) => (

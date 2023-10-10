@@ -139,6 +139,7 @@ export default function Tech() {
 						))}
 					</ul>
 				</Section>
+				<div className="border border-t-[1px] text-secondary w-full"></div>
 				<Section heading="Software">
 					<ul className="flex-grow grid grid-cols-1 lg:grid-cols-3 gap-5 animated-list">
 						{softwares.map((software) => (

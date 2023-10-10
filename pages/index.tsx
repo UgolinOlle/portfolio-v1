@@ -70,7 +70,7 @@ export default function Index() {
 						className="animate-in flex flex-col md:flex-row gap-6 text-secondary"
 						style={{ "--index": 1 } as React.CSSProperties}
 					>
-						<div className="flex flex-col gap-5 w-1/2">
+						<div className="flex flex-col gap-5 w-full md:w-1/2">
 							<h4 className="text-primary text-2xl md:text-3xl font-medium">
 								A little bit of jazz to make you&apos;re day
 							</h4>
@@ -89,7 +89,7 @@ export default function Index() {
 								src="https://embed.music.apple.com/fr/playlist/jazz-vibes/pl.u-WabZv4jUeNLbEzg?l=en-GB"
 							/>
 						</div>
-						<div className="flex flex-col gap-5 w-1/2">
+						<div className="flex flex-col gap-5 w-full md:w-1/2">
 							<h4 className="text-primary text-2xl md:text-3xl font-medium">
 								Why not a little story before start my portfolio
 								?
@@ -118,6 +118,8 @@ export default function Index() {
 								and minds, reminding us all that music can be an
 								endless source of creativity and expression.
 							</p>
+
+							{/* ADD BUTTON TO ABOUT PAGE */}
 						</div>
 					</div>
 				</div>
