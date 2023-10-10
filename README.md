@@ -1,40 +1,112 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio
 
-## Getting Started
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![GitHub last commit](https://img.shields.io/github/last-commit/ugolinolle/portfolio-v1)
+[![GitHub stars](https://img.shields.io/github/stars/ugolinolle/portfolio-v1)](https://github.com/ugolinolle/portfolio-v1/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/ugolinolle/portfolio-v1)](https://github.com/ugolinolle/portfolio-v1/issues)
+[![GitHub forks](https://img.shields.io/github/forks/ugolinolle/portfolio-v1)](https://github.com/ugolinolle/portfolio-v1/network)
 
-First, run the development server:
+Ce dépôt contient le code source de mon portfolio personnel. Vous pouvez y trouver des informations sur moi, mes projets et mes compétences techniques.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Structure du Projet
+
+Le projet est organisé de la manière suivante :
+
+```plaintext
+.
+├── components
+│  ├── Header.tsx
+│  ├── NavigationLink.tsx
+│  ├── ThemeSwitcher.tsx
+│  └── ui
+│     ├── Button.tsx
+│     ├── Link.tsx
+│     ├── Section.tsx
+│     └── Title.tsx
+├── LICENSE
+├── next.config.js
+├── package.json
+├── pages
+│  ├── 404.tsx
+│  ├── _app.tsx
+│  ├── _document.tsx
+│  ├── about.tsx
+│  ├── api
+│  │  └── github.ts
+│  ├── index.tsx
+│  ├── projects
+│  │  └── index.tsx
+│  └── tech.tsx
+├── postcss.config.js
+├── public
+│  ├── 42_Logo.png
+│  ├── 42 Logo.svg
+│  ├── favicon.ico
+│  ├── profile-pic.png
+│  ├── projects
+│  │  ├── get_next_line
+│  │  │  ├── logo-black.svg
+│  │  │  ├── logo-color.svg
+│  │  │  ├── logo-no-background.svg
+│  │  │  └── logo-white.svg
+│  │  ├── printf
+│  │  │  ├── logo-black.svg
+│  │  │  ├── logo-color.svg
+│  │  │  ├── logo-no-background.svg
+│  │  │  └── logo-white.svg
+│  │  └── talent_flow
+│  │     ├── logo-black.svg
+│  │     ├── logo-color.svg
+│  │     ├── logo-no-background.svg
+│  │     └── logo-white.svg
+│  └── tech
+│     ├── bag.webp
+│     ├── discord.jpeg
+│     ├── Docker logo.svg
+│     ├── insomnia.png
+│     ├── intellij.png
+│     ├── iterm.png
+│     ├── keyboard.webp
+│     ├── mac.jpg
+│     ├── mouse.webp
+│     ├── notion_logo.png
+│     ├── slack.png
+│     ├── tableplus.webp
+│     ├── todoist.png
+│     └── vscode.jpeg
+├── README.md
+├── styles
+│  └── globals.css
+├── tailwind.config.ts
+├── tsconfig.json
+├── utils
+│  ├── api.js
+│  ├── constants.ts
+│  └── interfaces
+│     └── about.ts
+└── yarn.lock
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Langages, Frameworks et Packages Utilisés
+- Langages de Programmation : JavaScript, TypeScript
+- Frameworks : Next.js
+- Outils de Build : Webpack, Babel
+- Gestionnaire de Packages : Yarn
+- CSS : Tailwind CSS
+- Préprocesseur CSS : PostCSS
+- Gestion de Version : Git, GitHub
+- Intégration de Données : API GitHub
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Comment Démarrer
+1. Clonez ce dépôt sur votre machine locale.
+```
+git clone https://github.com/UgolinOlle/portfolio-v1.git
+```
+2. Exécutez `yarn install` pour installer les dépendances.
+3. Exécutez `yarn dev` pour lancer l'application en mode développement.
+4. Ouvrez votre navigateur et accédez à `http://localhost:3000` pour voir le portfolio.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+# Licence
+Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[© Ugolin Ollé](mailto:hello@ugolin-olle.com)
