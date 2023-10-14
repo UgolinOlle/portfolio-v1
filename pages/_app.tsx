@@ -49,7 +49,7 @@ function App({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
 					<meta property="og:type" content="website" />
 					<meta
 						property="og:image"
-						content="https://ugolin-olle/profile-pic.png"
+						content="https://ugolin-olle.com/profile-pic.png"
 					/>
 				</Head>
 				<div className="antialiased bg-primary text-primary width-full">
