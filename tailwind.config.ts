@@ -7,23 +7,29 @@ const config: Config = {
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
+		colors: {
+			blue: "#0171e2",
+			white: "#ffffff",
+			green: "#32C732",
+			red: "#FF6961"
+		},
 		extend: {
 			textColor: {
-				primary: "var(--gray12)",
-				secondary: "var(--gray11)",
-				tertiary: "var(--gray9)",
+				primary: "var(--gray-12)",
+				secondary: "var(--gray-11)",
+				tertiary: "var(--gray-9)",
 				brand: "var(--brand)",
 			},
 			backgroundColor: {
-				primary: "var(--gray1)",
-				secondary: "var(--gray4)",
-				secondaryA: "var(--grayA4)",
-				tertiary: "var(--gray3)",
+				primary: "var(--gray-1)",
+				secondary: "var(--gray-4)",
+				secondaryA: "var(--grayA-4)",
+				tertiary: "var(--gray-3)",
 				blur: "var(--blurBackground)",
 			},
 			borderColor: {
-				primary: "var(--gray6)",
-				secondary: "var(--gray4)",
+				primary: "var(--gray-6)",
+				secondary: "var(--gray-4)",
 			},
 		},
 	},

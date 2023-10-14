@@ -23,21 +23,14 @@ export function Header() {
 	];
 
 	return (
-		<header className="relative md:sticky top-0 z-20 bg-primary">
-			<nav className="px-4 md:px-6 py-3 lg max-w-[1000px] mx-auto flex justify-between items-center gap-4 bg-primary">
-				<NavigationLink href="/">
-					<h3 className="font-bold">UO</h3>
-				</NavigationLink>
+		<header className="relative md:sticky top-0 main-header bg-primary z-50">
+			<nav className="px-4 md:px-6 py-3 lg max-w-[975px] mx-auto flex justify-between items-center gap-4 bg-primary">
+				<Link href="/">
+					<h3 className="text-2xl font-bold">UO</h3>
+				</Link>
 				<ul className="hidden md:flex items-center gap-2">
 					{links.map((link) => (
-						<li
-							key={link.red}
-							className={
-								link.name === "Source"
-									? "bg-[#0171e2] rounded-full text-white"
-									: undefined
-							}
-						>
+						<li key={link.red}>
 							<NavigationLink href={link.red}>
 								{link.icon ? link.icon : undefined} {link.name}
 							</NavigationLink>
@@ -45,7 +38,7 @@ export function Header() {
 					))}
 				</ul>
 				<Popover className="relative ml-auto md:hidden">
-					<Popover.Button className="flex items-center gap-2 text-secondary p-1 rounded-lg focus-visible:outline-none focus:ring-0">
+					<Popover.Button className="flex items-center gap-2 text-primary p-1 rounded-lg focus-visible:outline-none focus:ring-0">
 						Menu
 						<BsStars />
 					</Popover.Button>

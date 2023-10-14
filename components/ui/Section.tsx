@@ -17,7 +17,7 @@ export function Section({ heading, children, className }: SectionProps) {
 		>
 			<h2
 				className={
-					"md:w-36 text-secondary shrink-0 md:text-3xl text-2xl border-r-[1px] border-tertiary"
+					"md:w-36 text-primary shrink-0 md:text-3xl text-2xl border-r-[1px] border-secondary"
 				}
 			>
 				{heading}

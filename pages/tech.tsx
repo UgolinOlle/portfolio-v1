@@ -16,6 +16,7 @@ import vscode from "@/public/tech/vscode.jpeg";
 import insomnia from "@/public/tech/insomnia.png";
 import tableplus from "@/public/tech/tableplus.webp";
 import docker from "@/public/tech/Docker logo.svg";
+import { Transition } from "@/components/Transition";
 
 export default function Tech() {
 	const techs = [
@@ -111,60 +112,62 @@ export default function Tech() {
 	return (
 		<>
 			<Title title="Tech | Ugolin Ollé" />
-			<div className="flex flex-col gap-16 md:gap-24">
-				<h1 className="animate-in text-6xl md:text-8xl font-bold tracking-tight pb-6">
-					Tech
-				</h1>
-				<Section heading="Gear">
-					<ul className="flex-grow grid grid-cols-1 lg:grid-cols-2 gap-5 animated-list">
-						{techs.map((tech) => (
-							<li
-								key={tech.label}
-								className="flex gap-4 items-center transition-opacity"
-							>
-								<div className="relative rounded-xl overflow-hidden bg-tertiary aspect-square w-[12rem] min-w-[12rem] h-[12rem] shadow">
-									<Image
-										src={tech.img}
-										alt={tech.label}
-										className="object-center object-cover w-full h-full"
-										fill
-									/>
-								</div>
-								<div className="w-full flex flex-col text-primary">
-									<h4 className="text-[1.3rem] font-medium">
-										{tech.label}
-									</h4>
-								</div>
-							</li>
-						))}
-					</ul>
-				</Section>
-				<div className="border border-t-[1px] text-secondary w-full"></div>
-				<Section heading="Software">
-					<ul className="flex-grow grid grid-cols-1 lg:grid-cols-3 gap-5 animated-list">
-						{softwares.map((software) => (
-							<li
-								key={software.label}
-								className="flex gap-4 items-center transition-opacity"
-							>
-								<div className="relative rounded-xl overflow-hidden bg-tertiary aspect-square w-[3rem] min-w-[3rem] h-[3rem] shadow">
-									<Image
-										src={software.img}
-										alt={software.label}
-										className="object-center object-cover w-full h-full"
-										fill
-									/>
-								</div>
-								<div className="w-full flex flex-col text-primary">
-									<h4 className="text-[1.3rem] font-medium">
-										{software.label}
-									</h4>
-								</div>
-							</li>
-						))}
-					</ul>
-				</Section>
-			</div>
+			<Transition>
+				<div className="flex flex-col gap-16 md:gap-24">
+					<h1 className="animate-in text-6xl md:text-8xl font-bold tracking-tight pb-6">
+						Tech
+					</h1>
+					<Section heading="Gear">
+						<ul className="flex-grow grid grid-cols-1 lg:grid-cols-2 gap-5 animated-list">
+							{techs.map((tech) => (
+								<li
+									key={tech.label}
+									className="flex gap-4 items-center transition-opacity"
+								>
+									<div className="relative rounded-xl overflow-hidden bg-tertiary aspect-square w-[12rem] min-w-[12rem] h-[12rem] shadow">
+										<Image
+											src={tech.img}
+											alt={tech.label}
+											className="object-center object-cover w-full h-full"
+											fill
+										/>
+									</div>
+									<div className="w-full flex flex-col text-primary">
+										<h4 className="text-[1.3rem] font-medium">
+											{tech.label}
+										</h4>
+									</div>
+								</li>
+							))}
+						</ul>
+					</Section>
+					<div className="border border-t-[1px] text-secondary w-full"></div>
+					<Section heading="Software">
+						<ul className="flex-grow grid grid-cols-1 lg:grid-cols-3 gap-5 animated-list">
+							{softwares.map((software) => (
+								<li
+									key={software.label}
+									className="flex gap-4 items-center transition-opacity"
+								>
+									<div className="relative rounded-xl overflow-hidden bg-tertiary aspect-square w-[3rem] min-w-[3rem] h-[3rem] shadow">
+										<Image
+											src={software.img}
+											alt={software.label}
+											className="object-center object-cover w-full h-full"
+											fill
+										/>
+									</div>
+									<div className="w-full flex flex-col text-primary">
+										<h4 className="text-[1.3rem] font-medium">
+											{software.label}
+										</h4>
+									</div>
+								</li>
+							))}
+						</ul>
+					</Section>
+				</div>
+			</Transition>
 		</>
 	);
 }
