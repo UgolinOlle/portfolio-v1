@@ -42,7 +42,7 @@ export default function Projects() {
 				"L'indispensable ft_printf de l'École 42 offre une puissante capacité de formatage pour l'affichage de données, permettant une gestion précise de l'output, un outil essentiel pour les projets de programmation en C.",
 			date: "2023",
 			href: "https://github.com/UgolinOlle/ft_printf",
-			img: school_logo,
+			img: "https://github.com/mcombeau/mcombeau/blob/main/42_badges/ft_printfe.png",
 			tags: ["Finish", "Makefile", "C"],
 		},
 		{

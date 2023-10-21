@@ -1,5 +1,5 @@
 import { BsGithub, BsLinkedin, BsMailbox, BsGit } from "react-icons/bs";
-import { FaDocker, FaSymfony } from "react-icons/fa";
+import { FaDocker } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import {
 	BiLogoFlutter,
@@ -52,7 +52,6 @@ export default function About() {
 			{ label: "Java", icon: <BiLogoJava /> },
 			// { label: 'NestJS', icon: <SiNestjs /> },
 			{ label: "Python", icon: <BiLogoPython /> },
-			{ label: "Symfony", icon: <FaSymfony /> },
 		],
 		Frontend: [
 			{ label: "React", icon: <BiLogoReact /> },
@@ -147,7 +146,7 @@ export default function About() {
 										always striving to to improve.
 									</p>
 									<p className="text-justify">
-										I&apo;m passionate about development,
+										I&apos;m passionate about development,
 										but also about travel and the different
 										cultures of the world. Every line of
 										code I write is about connecting people

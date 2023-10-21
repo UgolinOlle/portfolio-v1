@@ -1,4 +1,5 @@
 import useSWR from "swr";
+import Image from "next/image";
 import { BsGithub, BsFillPersonFill } from "react-icons/bs";
 import { BiBook, BiGitCommit, BiMailSend } from "react-icons/bi";
 import { RiGitRepositoryFill } from "react-icons/ri";
@@ -6,8 +7,8 @@ import { RiGitRepositoryFill } from "react-icons/ri";
 import fetcher from "@/utils/api";
 import { Link } from "@/components/ui/Link";
 import { Title } from "@/components/ui/Title";
-import { Button } from "@/components/ui/Button";
 import { Transition } from "@/components/Transition";
+import avatar from "@/public/profile-pic.png";
 
 export default function Index() {
 	const { data: githubData, error: githubError } = useSWR(
@@ -71,8 +72,18 @@ export default function Index() {
 							className="animate-in flex flex-col md:flex-row gap-6 text-secondary"
 							style={{ "--index": 1 } as React.CSSProperties}
 						>
-							<div className="flex flex-col gap-5 w-full md:w-1/2">
+							<div className="flex flex-col md:items-start items-center gap-5 w-full md:w-1/2">
 								<h4 className="text-primary text-2xl md:text-3xl font-medium">
+									👋🏻 Hi, this is my face!
+								</h4>
+								<Image
+									src={avatar}
+									alt="Profile picture"
+									className="object-center w-[200px] h-[200px] md:w-[400px] md:h-[400px] mt-8"
+								/>
+							</div>
+							<div className="flex flex-col gap-5 w-full md:w-1/2">
+								<h4 className="text-primary text-2xl md:text-3xl font-medium text-center">
 									A little bit of jazz to make you&apos;re day
 								</h4>
 								<iframe
@@ -89,41 +100,6 @@ export default function Index() {
 									sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
 									src="https://embed.music.apple.com/fr/playlist/jazz-vibes/pl.u-WabZv4jUeNLbEzg?l=en-GB"
 								/>
-							</div>
-							<div className="flex flex-col gap-5 w-full md:w-1/2">
-								<h4 className="text-primary text-2xl md:text-3xl font-medium">
-									Why not a little story before start my
-									portfolio ?
-								</h4>
-								<p className="text-secondary">
-									Once upon a time, in the bustling streets of
-									New Orleans in the early 20th century, there
-									was a group of passionate musicians. They
-									would gather in smoky, dimly lit clubs,
-									their instruments bathed in the soft glow of
-									oil lamps. These artists had a unique
-									language, a language known as jazz. They
-									blended African rhythms, European melodies,
-									and deep emotions to create music that
-									stirred the soul.
-								</p>
-								<p className="text-secondary">
-									Their daring improvisations were like
-									musical conversations, where each instrument
-									had its voice. Jazz grew, spread across the
-									world, and evolved over the decades. It
-									inspired generations of artists and bore
-									witness to the tumultuous history of the
-									20th century.
-								</p>
-								<p className="text-secondary">
-									Even today, it continues to resonate in
-									hearts and minds, reminding us all that
-									music can be an endless source of creativity
-									and expression.
-								</p>
-
-								{/* ADD BUTTON TO ABOUT PAGE */}
 							</div>
 						</div>
 					</div>
