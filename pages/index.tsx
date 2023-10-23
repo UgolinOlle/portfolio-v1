@@ -84,7 +84,7 @@ export default function Index() {
 							</div>
 							<div className="flex flex-col gap-5 w-full md:w-1/2">
 								<h4 className="text-primary text-2xl md:text-3xl font-medium text-center">
-									A little bit of jazz to make you&apos;re day
+									A little bit of jazz to make your day
 								</h4>
 								<iframe
 									allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"

@@ -1,86 +1,15 @@
-import { BsGithub, BsLinkedin, BsMailbox, BsGit } from "react-icons/bs";
-import { FaDocker } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
-import {
-	BiLogoFlutter,
-	BiLogoJava,
-	BiLogoMongodb,
-	BiLogoNodejs,
-	BiLogoPostgresql,
-	BiLogoPython,
-	BiLogoReact,
-	BiLogoTailwindCss,
-	BiLogoTypescript,
-	BiLogoWordpress,
-} from "react-icons/bi";
-import { VscTerminalBash } from "react-icons/vsc";
-
 import { Link } from "@/components/ui/Link";
 import { Section } from "@/components/ui/Section";
 import { Transition } from "@/components/Transition";
 import { Title } from "@/components/ui/Title";
-import { CategorizedSkills } from "@/utils/interfaces/about";
+import {
+	categorizedSkills,
+	links,
+	feedbacks,
+	languages,
+} from "@/utils/data/about";
 
 export default function About() {
-	const links = [
-		{
-			label: "Github",
-			icon: <BsGithub />,
-			href: "https://github.com/UgolinOlle",
-		},
-		{
-			label: "LinkedIn",
-			icon: <BsLinkedin />,
-			href: "https://linkedin.com/in/ugolin-olle",
-		},
-		{
-			label: "Email",
-			icon: <BsMailbox />,
-			href: "mailto:contact@ugolin-olle.com",
-		},
-	];
-
-	const categorizedSkills: CategorizedSkills = {
-		DevOps: [
-			{ label: "Docker", icon: <FaDocker /> },
-			// { label: 'Grafana', icon: <SiGrafana /> },
-			{ label: "Bash", icon: <VscTerminalBash /> },
-			{ label: "Git", icon: <BsGit /> },
-		],
-		Backend: [
-			{ label: "NodeJS", icon: <BiLogoNodejs /> },
-			{ label: "Java", icon: <BiLogoJava /> },
-			// { label: 'NestJS', icon: <SiNestjs /> },
-			{ label: "Python", icon: <BiLogoPython /> },
-		],
-		Frontend: [
-			{ label: "React", icon: <BiLogoReact /> },
-			{ label: "Typescript", icon: <BiLogoTypescript /> },
-			{ label: "NextJS", icon: <TbBrandNextjs /> },
-			{ label: "TailwindCSS", icon: <BiLogoTailwindCss /> },
-			{ label: "Flutter", icon: <BiLogoFlutter /> },
-			{ label: "Wordpress", icon: <BiLogoWordpress /> },
-		],
-		Databases: [
-			{ label: "PostgreSQL", icon: <BiLogoPostgresql /> },
-			{ label: "MongoDB", icon: <BiLogoMongodb /> },
-		],
-	};
-
-	const feedbacks = [
-		{
-			label: "We Are Pirates",
-			content:
-				"Great exchange with Ugolin, he is responsive, attentive and above all very professional!",
-			author: "Thomas Amusan",
-		},
-		{
-			label: "Boookable",
-			content: `Ugolin helped me prepare a project to create a mobile application. Ugolin listened carefully to understand my project and my wishes in terms of product functionality. He didn't try to "impose" his ideas; on the contrary, he made several proposals. These were clear and pragmatic, and perfectly suited to my needs. What's more, I particularly enjoyed my discussions with Ugolin, who, over and above his technical expertise, is a very friendly person. I can't recommend Ugolin enough!`,
-			author: "Abdessalem Abaidi",
-		},
-	];
-
 	const sortedCategories = Object.keys(categorizedSkills).sort();
 
 	const sortedSkills = sortedCategories.map((category) => ({
@@ -105,22 +34,18 @@ export default function About() {
 									</li>
 									<li className="transition-opacity">
 										<b>2019</b>・Starting learning
-										development in autodidact.
+										development in self-taught.
 									</li>
 									<li className="transition-opacity">
 										<b>2021 - Present</b>・Freelance
 									</li>
 									<li className="transition-opacity">
-										<b>2022 - 2022</b>・1 Year at
-										MyDigitalSchool.
-									</li>
-									<li className="transition-opacity">
-										<b>2022</b>・Work at Nicoka (as
-										Developer back in internership)
+										<b>2022</b>・Work at Nicoka (as Back-end
+										Developer in internship)
 									</li>
 									<li>
 										<b>2022</b>・Work at Azerty Consulting
-										(as Developer Full Stack)
+										(as Full Stack Developer)
 									</li>
 									<li className="transition-opacity">
 										<b>2023 - Present</b>・Enter at 42
@@ -134,42 +59,56 @@ export default function About() {
 									<p className="text-justify">
 										As a{" "}
 										<b className="font-extrabold text-[#0171e2]">
-											freelance full stack developer
+											Full Stack Developer in Freelance
 										</b>{" "}
 										and{" "}
 										<b className="font-extrabold text-[#0171e2]">
-											software engineering
+											Software Engineer
 										</b>{" "}
 										at 42 Bangkok, I love the world of
-										technology. My day-to-day is to create
-										innovative IT solutions solutions and
-										always striving to to improve.
+										technology. My day-to-day goals is to
+										create innovative IT solutions and
+										always striving to improve.
 									</p>
 									<p className="text-justify">
-										I&apos;m passionate about development,
-										but also about travel and the different
-										cultures of the world. Every line of
-										code I write is about connecting people
-										and their ideas. I also enjoy
-										discovering new places to broaden my
-										perspective.
+										I&apos;m passionate about software
+										development, but also about travel and
+										meeting different cultures of the world.{" "}
 									</p>
 									<p className="text-justify">
+										I&apos;m also passionate about{" "}
 										<b className="font-extrabold text-[#0171e2]">
 											Jazz
 										</b>{" "}
-										is another of my passions. Its diversity
-										and creativity inspire me in my personal
-										life. There&apos;s a harmony between my
-										passion for coding and my love of music
-										music, which makes me a dedicated,
-										inquisitive and a dedicated student,
-										curious and in love with life.
+										music. Its diversity and creativity
+										inspire me in my personal life.
+										There&apos;s an harmony between my
+										passion for coding and my love of music.
 									</p>
 								</div>
 							</div>
 						</Section>
 					</div>
+					<Section heading="Languages">
+						<ul className="flex-grow grid grid-cols-1 lg:grid-cols-2 gap-2 animated-list">
+							{languages.map((language) => (
+								<li
+									key={language.label}
+									className="transition-opacity  col-span-1"
+								>
+									<p className="text-primary">
+										<span className="w-[50px] h-[50px]">
+											{language.icon}
+										</span>{" "}
+										{language.label}
+									</p>
+									<span className="text-secondary">
+										{language.level}
+									</span>
+								</li>
+							))}
+						</ul>
+					</Section>
 					<div className="border border-t-[0.5px] border-secondary"></div>
 					<Section heading="Socials">
 						<ul className="flex-grow grid grid-cols-1 lg:grid-cols-2 gap-2 animated-list">
@@ -216,7 +155,7 @@ export default function About() {
 						</ul>
 					</Section>
 					<div className="border border-t-[0.5px] border-secondary"></div>
-					<Section heading="Advice">
+					<Section heading="Credentials">
 						<ul className="flex flex-col justify-between items-start space-y-5 lg:w-1/2">
 							{feedbacks.map((feedback) => (
 								<li key={feedback.label}>

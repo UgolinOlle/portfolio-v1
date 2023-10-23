@@ -14,9 +14,9 @@ export function Header() {
 	const links = [
 		{ name: "About", red: "/about" },
 		{ name: "Projects", red: "/projects" },
-		{ name: "Tech", red: "/tech" },
+		{ name: "Gears", red: "/gears" },
 		{
-			name: "Source",
+			name: "Source code",
 			icon: <BsGithub />,
 			red: "https://github.com/UgolinOlle/portfolio-v1",
 		},
