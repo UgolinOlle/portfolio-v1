@@ -14,7 +14,6 @@ import {
 } from "react-icons/bi";
 import { FaDocker } from "react-icons/fa";
 import { VscTerminalBash } from "react-icons/vsc";
-import { ES, FR, GB } from "country-flag-icons/react/3x2";
 
 import { CategorizedSkills } from "@/utils/interfaces/about";
 
@@ -74,23 +73,5 @@ export const feedbacks = [
 		label: "Boookable",
 		content: `Ugolin helped me prepare a project to create a mobile application. Ugolin listened carefully to understand my project and my wishes in terms of product functionality. He didn't try to "impose" his ideas; on the contrary, he made several proposals. These were clear and pragmatic, and perfectly suited to my needs. What's more, I particularly enjoyed my discussions with Ugolin, who, over and above his technical expertise, is a very friendly person. I can't recommend Ugolin enough!`,
 		author: "Abdessalem Abaidi",
-	},
-];
-
-export const languages = [
-	{
-		label: "French",
-		level: "Fluent",
-		icon: <FR />,
-	},
-	{
-		label: "English",
-		level: "Work fluent",
-		icon: <GB />,
-	},
-	{
-		label: "Spanish",
-		level: "Basic discussion",
-		icon: <ES />,
 	},
 ];

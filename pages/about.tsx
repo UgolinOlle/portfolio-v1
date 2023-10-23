@@ -2,12 +2,7 @@ import { Link } from "@/components/ui/Link";
 import { Section } from "@/components/ui/Section";
 import { Transition } from "@/components/Transition";
 import { Title } from "@/components/ui/Title";
-import {
-	categorizedSkills,
-	links,
-	feedbacks,
-	languages,
-} from "@/utils/data/about";
+import { categorizedSkills, links, feedbacks } from "@/utils/data/about";
 
 export default function About() {
 	const sortedCategories = Object.keys(categorizedSkills).sort();
@@ -89,26 +84,6 @@ export default function About() {
 							</div>
 						</Section>
 					</div>
-					<Section heading="Languages">
-						<ul className="flex-grow grid grid-cols-1 lg:grid-cols-2 gap-2 animated-list">
-							{languages.map((language) => (
-								<li
-									key={language.label}
-									className="transition-opacity  col-span-1"
-								>
-									<p className="text-primary">
-										<span className="w-[50px] h-[50px]">
-											{language.icon}
-										</span>{" "}
-										{language.label}
-									</p>
-									<span className="text-secondary">
-										{language.level}
-									</span>
-								</li>
-							))}
-						</ul>
-					</Section>
 					<div className="border border-t-[0.5px] border-secondary"></div>
 					<Section heading="Socials">
 						<ul className="flex-grow grid grid-cols-1 lg:grid-cols-2 gap-2 animated-list">
