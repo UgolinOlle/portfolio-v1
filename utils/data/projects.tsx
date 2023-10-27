@@ -27,7 +27,7 @@ export const projects = [
 		description:
 			"An essential function for file manipulation in C, get_next_line allows you to read a file line by line efficiently, simplifying the processing of textual data.",
 		date: "2023",
-		href: "https://github.com/UgolinOlle/get_next_line",
+		href: "/projects/get_next_line",
 		img: get_next_line,
 		tags: ["Finish", "Makefile", "C"],
 	},

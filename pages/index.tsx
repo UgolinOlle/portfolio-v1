@@ -6,7 +6,6 @@ import fetcher from "@/utils/api";
 import { Title } from "@/components/ui/Title";
 import { Transition } from "@/components/Transition";
 import { Link } from "@/components/ui/Link";
-import { Columns } from "@/components/Column";
 
 export default function Index() {
     const { data: githubData, error: githubError } = useSWR(

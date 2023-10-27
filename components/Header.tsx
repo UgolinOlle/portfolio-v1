@@ -7,6 +7,7 @@ import { Fragment } from "react";
 import { NavigationLink } from "./NavigationLink";
 import { Link } from "./ui/Link";
 import { ThemeSwitcher } from "./ThemeSwitcher";
+import { BiMailSend } from "react-icons/bi";
 
 export function Header() {
 	const router = useRouter();
@@ -24,9 +25,9 @@ export function Header() {
 
 	return (
 		<header className="relative md:sticky top-0 main-header bg-primary z-50">
-			<nav className="px-4 md:px-6 py-3 lg max-w-[975px] mx-auto flex justify-between items-center gap-4 bg-primary">
+			<nav className="px-4 md:px-6 py-3 lg max-w-[1050px] mx-auto flex justify-between items-center gap-4 bg-primary">
 				<Link href="/">
-					<h3 className="text-2xl font-bold">UO</h3>
+					<h3 className="text-3xl font-extrabold">UO</h3>
 				</Link>
 				<ul className="hidden md:flex items-center gap-2">
 					{links.map((link) => (
@@ -75,7 +76,16 @@ export function Header() {
 					</Transition>
 				</Popover>
 
-				<div className="flex items-center justify-center w-8 h-8">
+				<div className="flex items-center justify-center w-22 h-8 gap-5">
+					<div className="transition-opacity bg-blue rounded-full py-2 px-4 text-white">
+						<Link
+							className="flex gap-3 items-center no-underline"
+							href={"mailto:hello@ugolin-olle.com"}
+						>
+							<BiMailSend className="text-xl" />
+							Contact
+						</Link>
+					</div>
 					<ThemeSwitcher />
 				</div>
 			</nav>

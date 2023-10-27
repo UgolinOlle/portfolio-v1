@@ -1,13 +1,14 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { NextPage } from "next";
-import { useRouter } from "next/router";
-import { ReactElement, ReactNode } from "react";
+import { ReactElement, ReactNode, useEffect } from "react";
+
 import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from "framer-motion";
 
 import "@/styles/globals.css";
 import "reactjs-popup/dist/index.css";
+
 import { Header } from "@/components/Header";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
@@ -26,7 +27,6 @@ function App({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
                 {page}
             </main>
         ));
-    const router = useRouter();
 
     return (
         <AnimatePresence mode="wait">
@@ -39,7 +39,7 @@ function App({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
                         name="viewport"
                         content="initial-scale=1.0, width=device-width"
                     />
-					<meta name="theme-color" content="#0171e2" />
+                    <meta name="theme-color" content="#0171e2" />
                     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
                     <link
                         rel="shortcut icon"
