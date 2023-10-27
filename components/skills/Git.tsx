@@ -16,20 +16,19 @@ export function Git() {
                 <BsGit />
                 <h3 className="font-bold">Git</h3>
             </div>
-            <h4 className="text-white text-lg opacity-70">My works</h4>
+            <div className="flex space-x-2">
+                <Image
+                    src={nicokaLogo}
+                    alt="Nicoka Logo"
+                    width={30}
+                    height={25}
+                    className="rounded-lg"
+                />
+                <h4 className="md:text-2xl font-medium">・Nicoka</h4>
+            </div>
             <div className="flex flex-col md:grid md:grid-cols-2 gap-3 h-auto w-full">
                 <div className="space-y-3 pl-3 transition-all p-3 h-auto">
-                    <div className="flex space-x-2">
-                        <Image
-                            src={nicokaLogo}
-                            alt="Nicoka Logo"
-                            width={30}
-                            height={25}
-                            className="rounded-lg"
-                        />
-                        <h4 className="md:text-2xl font-medium">・Nicoka</h4>
-                    </div>
-                    <p className="text-justify">
+                    <p className="text-justify italic pb-5">
                         During my time at Nicoka, the company opted for
                         Bitbucket as its code hosting platform, given its
                         advanced rights management features, its good
@@ -80,12 +79,12 @@ export function Git() {
                     </p>
                 </div>
             </div>
+            <h4 className="text-2xl md:text-3xl font-medium">
+                <span className="font-bold">UO</span>
+                ・Personal
+            </h4>
             <div className="flex flex-col md:grid md:grid-cols-2 gap-3 h-auto w-full">
                 <div className="space-y-3 pl-3 transition-all p-3 h-auto">
-                    <h4 className="md:text-2xl font-medium">
-                        <span className="font-bold">UO</span>
-                        ・Personal
-                    </h4>
                     <p className="text-justify">
                         <span className="font-bold">🧑‍🤝‍🧑・Collaboration:</span>
                         For projects where I work in a team, Git facilitates
