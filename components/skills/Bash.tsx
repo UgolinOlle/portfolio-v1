@@ -63,37 +63,31 @@ export function Bash() {
                     </p>
                     <p className="text-justify">
                         <span className="font-bold">
-                            💻・Optimisation et maintenance:
+                            💻・Optimization and maintenance:
                         </span>{" "}
-                        Automatisation des tâches d&apos;optimisation, telles
-                        que la réparation des tables, la défragmentation et la
-                        vérification de l&apos;intégrité des données.
+                        Automation of optimization tasks, such as table repair
+                        such as table repair, defragmentation and data integrity
+                        data integrity checks.
                     </p>
                 </div>
             </div>
             {/* Description 2 */}
             <div className="space-y-3 pl-3 transition-all p-3 h-auto w-full">
-                <h4 className="text-2xl font-medium">
-                    🎛️・Automatisation de tâches
-                </h4>
+                <h4 className="text-2xl font-medium">🎛️・Task automation</h4>
                 <p className="text-justify">
-                    <span className="font-bold">
-                        🗓️・Planification avec Cron:
-                    </span>{" "}
-                    Utilisation de Cron conjointement avec Bash, planification
-                    des tâches pour qu&apos;elles s&apos;exécutent à des moments
-                    spécifiques, qu&apos;il s&apos;agisse de sauvegardes
-                    quotidiennes, de mises à jour régulières ou de toute autre
-                    tâche périodique.
+                    <span className="font-bold">🗓️・Planning with Cron:</span>{" "}
+                    Using Cron in conjunction with Bash, scheduling tasks to run
+                    at specific times, whether as backups or specific times, be
+                    they daily backups, regular updates regular updates or any
+                    other periodic task. periodic task.
                 </p>
                 <p className="text-justify">
                     <span className="font-bold">
-                        🚚・Déploiement et mise à jour:
+                        🚚・Deployment and updating:
                     </span>{" "}
-                    Automatisation du processus de déploiement de nouvelles
-                    versions d&apos;applications ou de mises à jour, en
-                    garantissant que chaque étape est exécutée dans le bon
-                    ordre.
+                    Automate the process of deploying new application
+                    application versions or updates, ensuring that each ensuring
+                    that each step is carried out in the correct sequence.
                 </p>
             </div>
         </div>
