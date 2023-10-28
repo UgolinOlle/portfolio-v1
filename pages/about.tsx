@@ -26,7 +26,7 @@ export default function About() {
                         </h1>
                         <Section heading="Bio" className="pt-8">
                             <div className="flex flex-col lg:flex-row gap-3">
-                                <ul className="flex flex-col-reverse justify-between items-start space-y-5 lg:w-1/2">
+                                <ul className="flex flex-col-reverse justify-between items-start gap-5 lg:w-1/2">
                                     <li className="transition-opacity">
                                         <b>2002</b>・Born in Angers, France.
                                     </li>
@@ -93,7 +93,7 @@ export default function About() {
                     </div>
                     <div className="border border-t-[0.5px] border-secondary"></div>
                     <Section heading="Skills">
-                        <ul className="flex-grow grid grid-cols-1 md:grid-cols-4 gap-2">
+                        <ul className="flex-grow grid md:grid-cols-2 lg:grid-cols-4 gap-3">
                             {sortedSkills.map((categorySkills) => (
                                 <li
                                     key={categorySkills.category}
@@ -102,7 +102,7 @@ export default function About() {
                                     <h4 className="text-primary font-bold text-2xl pb-8 pt-8 md:pt-0">
                                         {categorySkills.category}
                                     </h4>
-                                    <ul className="p-0 space-y-5 animated-list">
+                                    <ul className="space-y-8 animated-list">
                                         {categorySkills.skills.map((skill) => (
                                             <li
                                                 key={skill.label}
@@ -110,12 +110,18 @@ export default function About() {
                                             >
                                                 <Popup
                                                     trigger={
-                                                        <div className="transition-opacity no-underline w-full rounded-full text-white p-4 flex items-center gap-3 bg-[#0171e2]">
-                                                            <span className="text-2xl">
-                                                                {skill.icon}
-                                                            </span>
-                                                            <p>{skill.label}</p>
-                                                            <BsArrowUpRight />
+                                                        <div className="transition-opacity no-underline w-full rounded-full text-white p-4 flex justify-between items-center gap-3 bg-[#0171e2]">
+                                                            <div className="flex items-center gap-2">
+                                                                <span className="text-2xl">
+                                                                    {skill.icon}
+                                                                </span>
+                                                                <p>
+                                                                    {
+                                                                        skill.label
+                                                                    }
+                                                                </p>
+                                                            </div>
+                                                            <BsArrowUpRight className="font-bold text-lg" />
                                                         </div>
                                                     }
                                                     contentStyle={{
