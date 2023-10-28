@@ -7,7 +7,7 @@ import { FaDocker } from "react-icons/fa";
 
 export function Docker() {
     return (
-        <div className="h-full flex flex-col items-center gap-7 text-white">
+        <div className="h-full flex flex-col items-center gap-7 text-white p-4">
             <div className="flex justify-center items-center w-full gap-3 text-2xl md:text-5xl py-8">
                 <FaDocker />
                 <h3 className="font-bold">Docker</h3>

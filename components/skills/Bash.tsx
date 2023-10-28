@@ -4,15 +4,14 @@ import { VscTerminalBash } from "react-icons/vsc";
 
 export function Bash() {
     return (
-        <div className="h-full flex flex-col items-center gap-7 text-white">
+        <div className="h-full flex flex-col items-center gap-7 text-white p-4">
             <div className="flex justify-center items-center w-full gap-3 text-2xl md:text-5xl py-8">
                 <VscTerminalBash />
                 <h3 className="font-bold">Bash</h3>
             </div>
-            <h4 className="text-white text-lg opacity-70">My works</h4>
-            <div className="flex flex-col md:grid md:grid-cols-2 md:flex-wrap items-start justify-start gap-3 h-auto w-full">
+            <div className="flex flex-col md:grid md:grid-cols-2 md:flex-wrap items-start justify-start gap-8 h-auto w-full border-t pt-10 pb-10">
                 {/* Tools */}
-                <div className="space-y-3 pl-3 transition-all p-3 h-auto w-full">
+                <div className="space-y-3 transition-all h-auto w-full">
                     <h4 className="text-2xl font-medium">Some tools</h4>
                     <ul className="grid grid-cols-2 grid-rows-4 gap-5">
                         <li>
@@ -43,8 +42,8 @@ export function Bash() {
                 </div>
 
                 {/* Description */}
-                <div className="space-y-3 pl-3 transition-all p-3 h-auto">
-                    <p className="text-justify">
+                <div className="space-y-3 transition-all h-auto">
+                    <p>
                         <span className="font-bold">
                             💿・Scripting DB tasks:
                         </span>{" "}
@@ -52,7 +51,7 @@ export function Bash() {
                         database-related tasks, such as creating, deleting
                         updating or searching for specific specific entries.
                     </p>
-                    <p className="text-justify">
+                    <p>
                         <span className="font-bold">
                             🚀・Backup and restore:
                         </span>{" "}
@@ -61,7 +60,7 @@ export function Bash() {
                         store them and store them. Write scripts to restore
                         these backups when necessary.
                     </p>
-                    <p className="text-justify">
+                    <p>
                         <span className="font-bold">
                             💻・Optimization and maintenance:
                         </span>{" "}
@@ -72,16 +71,16 @@ export function Bash() {
                 </div>
             </div>
             {/* Description 2 */}
-            <div className="space-y-3 pl-3 transition-all p-3 h-auto w-full">
+            <div className="space-y-3 transition-all h-auto w-full border-t pt-10 pb-5">
                 <h4 className="text-2xl font-medium">🎛️・Task automation</h4>
-                <p className="text-justify">
+                <p>
                     <span className="font-bold">🗓️・Planning with Cron:</span>{" "}
                     Using Cron in conjunction with Bash, scheduling tasks to run
                     at specific times, whether as backups or specific times, be
                     they daily backups, regular updates regular updates or any
                     other periodic task. periodic task.
                 </p>
-                <p className="text-justify">
+                <p>
                     <span className="font-bold">
                         🚚・Deployment and updating:
                     </span>{" "}

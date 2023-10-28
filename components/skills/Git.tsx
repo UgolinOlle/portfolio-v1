@@ -11,7 +11,7 @@ import nicokaLogo from "@/public/nicoka-logo.png";
 
 export function Git() {
     return (
-        <div className="h-full flex flex-col items-center gap-7 text-white">
+        <div className="h-full flex flex-col items-center gap-7 text-white p-4">
             <div className="flex justify-center items-center w-full gap-3 text-2xl md:text-5xl py-8">
                 <BsGit />
                 <h3 className="font-bold">Git</h3>
@@ -26,16 +26,21 @@ export function Git() {
                 />
                 <h4 className="md:text-2xl font-medium">・Nicoka</h4>
             </div>
-            <div className="flex flex-col md:grid md:grid-cols-2 gap-3 h-auto w-full">
-                <div className="space-y-3 pl-3 transition-all p-3 h-auto">
-                    <p className="text-justify italic pb-5">
+            <div className="flex flex-col gap-5 h-auto w-full">
+                <div>
+                    <p>
+                        <span className="font-bold flex items-center">
+                            💬・Description:
+                        </span>{" "}
                         During my time at Nicoka, the company opted for
                         Bitbucket as its code hosting platform, given its
                         advanced rights management features, its good
                         integration with other Atlassian tools, and its ease of
                         integration with CI/CD pipelines.
                     </p>
-                    <p className="text-justify">
+                </div>
+                <div className="flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 gap-3 border-t pt-10">
+                    <p>
                         <span className="font-bold flex items-center">
                             <FaCodeBranch className="font-normal" />
                             ・Branching:
@@ -45,9 +50,7 @@ export function Git() {
                         This allowed me to work on individual elements without
                         disrupting the main code base.
                     </p>
-                </div>
-                <div className="space-y-3 pl-3 transition-all p-3 h-auto">
-                    <p className="text-justify">
+                    <p>
                         <span className="font-bold flex items-center">
                             <MdCommit className="text-2xl" />
                             ・Commits and push:
@@ -58,7 +61,7 @@ export function Git() {
                         the work done in my local branch, I pushed these changes
                         to Bitbucket.
                     </p>
-                    <p className="text-justify">
+                    <p>
                         <span className="font-bold flex items-center">
                             <BiGitMerge className="text-2xl" />
                             ・Merges:
@@ -67,7 +70,7 @@ export function Git() {
                         arose, I resolved them manually to ensure code
                         integrity.
                     </p>
-                    <p className="text-justify">
+                    <p>
                         <span className="font-bold flex items-center">
                             <SiGithubactions className="text-2xl" />
                             ・CI/CD:
@@ -79,20 +82,20 @@ export function Git() {
                     </p>
                 </div>
             </div>
-            <h4 className="text-2xl md:text-3xl font-medium">
-                <span className="font-bold">UO</span>
-                ・Personal
-            </h4>
-            <div className="flex flex-col md:grid md:grid-cols-2 gap-3 h-auto w-full">
-                <div className="space-y-3 pl-3 transition-all p-3 h-auto">
-                    <p className="text-justify">
-                        <span className="font-bold">🧑‍🤝‍🧑・Collaboration:</span>
+            <div className="flex flex-col gab-8 pb-5 border-t pt-10">
+                <h4 className="text-2xl font-medium mb-5 text-center">
+                    <span className="font-bold">UO</span>
+                    ・Personal
+                </h4>
+                <div className="flex flex-col md:grid md:grid-cols-2 gap-3 h-auto w-full">
+                    <p>
+                        <span className="font-bold">🧑‍🤝‍🧑・Collaboration: </span>
                         For projects where I work in a team, Git facilitates
                         collaboration, allowing multiple developers to work
                         simultaneously on different parts of a project without
                         coming into conflict.
                     </p>
-                    <p className="text-justify">
+                    <p>
                         <span className="font-bold">
                             💾・Backup and security:
                         </span>
@@ -102,9 +105,7 @@ export function Git() {
                         clone repositories allows me to work on different
                         environments or machines.
                     </p>
-                </div>
-                <div>
-                    <p className="text-justify">
+                    <p>
                         <span className="font-bold">
                             🗜️・Commitizen for conventional commits:
                         </span>
