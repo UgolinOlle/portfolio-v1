@@ -1,11 +1,11 @@
+import Popup from "reactjs-popup";
+import { BsArrowUpRight } from "react-icons/bs";
+
 import { Link } from "@/components/ui/Link";
 import { Section } from "@/components/ui/Section";
 import { Transition } from "@/components/Transition";
 import { Title } from "@/components/ui/Title";
 import { categorizedSkills, links, feedbacks } from "@/utils/data/about";
-import Popup from "reactjs-popup";
-import { BsArrowUpRight } from "react-icons/bs";
-import { BiCross } from "react-icons/bi";
 
 export default function About() {
     const sortedCategories = Object.keys(categorizedSkills).sort();
@@ -63,14 +63,13 @@ export default function About() {
                                         <b className="font-extrabold text-[#0171e2]">
                                             Full Stack Developer in Freelance
                                         </b>{" "}
-                                        and{" "}
+                                        and learning{" "}
                                         <b className="font-extrabold text-[#0171e2]">
-                                            Software Engineer
+                                            Computer Science
                                         </b>{" "}
-                                        at 42 Bangkok, I love the world of
-                                        technology. My day-to-day goals is to
-                                        create innovative IT solutions and
-                                        always striving to improve.
+                                        at 42 Bangkok. My day-to-day goals is to
+                                        create IT solutions and always striving
+                                        to improve.
                                     </p>
                                     <p className="text-justify">
                                         I&apos;m passionate about software
@@ -91,7 +90,6 @@ export default function About() {
                             </div>
                         </Section>
                     </div>
-                    <div className="border border-t-[0.5px] border-secondary"></div>
                     <Section heading="Skills">
                         <ul className="flex-grow grid md:grid-cols-2 lg:grid-cols-4 gap-3">
                             {sortedSkills.map((categorySkills) => (
@@ -127,7 +125,6 @@ export default function About() {
                                                     contentStyle={{
                                                         width: "80vw",
                                                         margin: "5rem auto 5rem auto",
-                                                        background: `${skill.background}`,
                                                         borderRadius: "16px",
                                                         boxShadow:
                                                             "0 4px 30px rgba(0, 0, 0, 0.1)",
@@ -135,7 +132,6 @@ export default function About() {
                                                             "blur(20px)",
                                                         WebkitBackdropFilter:
                                                             "blur(20px)",
-                                                        border: `1px solid ${skill.background_second}`,
                                                     }}
                                                     modal
                                                     nested
@@ -149,13 +145,12 @@ export default function About() {
                             ))}
                         </ul>
                     </Section>
-                    <div className="border border-t-[0.5px] border-secondary"></div>
                     <Section heading="Socials">
-                        <ul className="flex-grow grid grid-cols-1 lg:grid-cols-2 gap-2 animated-list">
+                        <ul className="flex-grow grid grid-cols-1 lg:grid-cols-2 gap-5 animated-list">
                             {links.map((link) => (
                                 <li
                                     key={link.label}
-                                    className="transition-opacity col-span-1"
+                                    className="transition-opacity col-span-1 w-full"
                                 >
                                     <Link
                                         href={link.href}
@@ -167,7 +162,6 @@ export default function About() {
                             ))}
                         </ul>
                     </Section>
-                    <div className="border border-t-[0.5px] border-secondary"></div>
                     <Section heading="Credentials">
                         <ul className="flex flex-col justify-between items-start space-y-5 lg:w-1/2">
                             {feedbacks.map((feedback) => (

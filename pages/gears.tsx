@@ -115,7 +115,7 @@ export default function Tech() {
 			<Transition>
 				<div className="flex flex-col gap-16 md:gap-24">
 					<h1 className="animate-in text-6xl md:text-8xl font-bold tracking-tight pb-6">
-						Tech
+						Gears
 					</h1>
 					<Section heading="Gear">
 						<ul className="flex-grow grid grid-cols-1 lg:grid-cols-2 gap-5 animated-list">

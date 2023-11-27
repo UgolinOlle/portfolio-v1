@@ -1,4 +1,10 @@
-import { BsGithub, BsLinkedin, BsMailbox, BsGit } from "react-icons/bs";
+import {
+    BsGithub,
+    BsLinkedin,
+    BsMailbox,
+    BsGit,
+    BsInstagram,
+} from "react-icons/bs";
 import { TbBrandNextjs } from "react-icons/tb";
 import {
     BiLogoFlutter,
@@ -19,6 +25,9 @@ import { CategorizedSkills } from "@/utils/interfaces/about";
 import { Docker } from "@/components/skills/Docker";
 import { Bash } from "@/components/skills/Bash";
 import { Git } from "@/components/skills/Git";
+import { Node } from "@/components/skills/Node";
+import { Java } from "@/components/skills/Java";
+import { Python } from "@/components/skills/Python";
 
 export const links = [
     {
@@ -36,6 +45,11 @@ export const links = [
         icon: <BsMailbox />,
         href: "mailto:contact@ugolin-olle.com",
     },
+    {
+        label: "Instagram",
+        icon: <BsInstagram />,
+        href: "https://www.instagram.com/ugolin_os/",
+    },
 ];
 
 export const categorizedSkills: CategorizedSkills = {
@@ -44,28 +58,34 @@ export const categorizedSkills: CategorizedSkills = {
             label: "Docker",
             icon: <FaDocker />,
             description: <Docker />,
-            background: "rgba(1, 113, 226, 0.73)",
-            background_second: "rgba(1, 113, 226, 1)",
         },
         {
             label: "Bash",
             icon: <VscTerminalBash />,
             description: <Bash />,
-            background: "rgba(35, 44, 52, 0.73)",
-            background_second: "rgba(35, 44, 52, 1)",
         },
         {
             label: "Git",
             icon: <BsGit />,
             description: <Git />,
-            background: "rgba(232, 77, 50, 0.73)",
-            background_second: "rgba(232, 77, 50, 1)",
         },
     ],
     Backend: [
-        { label: "NodeJS", icon: <BiLogoNodejs /> },
-        { label: "Java", icon: <BiLogoJava /> },
-        { label: "Python", icon: <BiLogoPython /> },
+        {
+            label: "NodeJS",
+            icon: <BiLogoNodejs />,
+            description: <Node />,
+        },
+        {
+            label: "Java",
+            icon: <BiLogoJava />,
+            description: <Java />,
+        },
+        {
+            label: "Python",
+            icon: <BiLogoPython />,
+            description: <Python />,
+        },
     ],
     Frontend: [
         { label: "React", icon: <BiLogoReact /> },

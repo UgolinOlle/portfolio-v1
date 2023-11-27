@@ -20,9 +20,16 @@ export default function Index() {
                 <div className="flex flex-col gap-16 md:gap-24">
                     <div className="flex flex-col gap-8 animate-in">
                         <div>
-                            <h1 className="animate-in text-6xl md:text-8xl tracking-tight pb-6">
-                                Ugolin Ollé
-                            </h1>
+                            <div className="flex gap-8 items-center">
+                                <h1 className="animate-in text-6xl md:text-8xl tracking-tight pb-6">
+                                    Ugolin Ollé
+                                </h1>
+                                <Image
+                                    src={avatar}
+                                    alt="Profile picture"
+                                    className="object-center w-[100px] h-[100px]"
+                                />
+                            </div>
                             <p
                                 className="text-2xl md:text-4xl text-primary animate-in font-[400]"
                                 style={{ "--index": 1 } as React.CSSProperties}
@@ -30,10 +37,10 @@ export default function Index() {
                                 I&apos;m a{" "}
                                 <Link href="/about">
                                     <span className="text-blue font-bold">
-                                        Software Engineer
+                                        Full Stack Developer
                                     </span>
                                 </Link>
-                                , a{" "}
+                                , in{" "}
                                 <Link href="/about">
                                     <span className="text-blue font-bold">
                                         Freelance
@@ -42,27 +49,17 @@ export default function Index() {
                                 and a{" "}
                                 <Link href="/about">
                                     <span className="text-blue font-bold">
-                                        Student at 42 Bangkok
+                                        Cadet at 42 Bangkok
                                     </span>
                                 </Link>
                                 .
                             </p>
                         </div>
-                        <div className="border border-t-[1px] text-secondary w-full"></div>
+                        <div className="border border-t-[1px] text-secondary w-full my-10"></div>
                         <div
                             className="animate-in flex flex-col md:flex-row gap-6 text-secondary"
                             style={{ "--index": 1 } as React.CSSProperties}
                         >
-                            <div className="flex flex-col md:items-start items-center gap-5 w-full md:w-1/2">
-                                <h4 className="text-primary text-2xl md:text-3xl font-medium">
-                                    👋🏻 Hi, this is my face!
-                                </h4>
-                                <Image
-                                    src={avatar}
-                                    alt="Profile picture"
-                                    className="object-center w-[200px] h-[200px] md:w-[400px] md:h-[400px] mt-8"
-                                />
-                            </div>
                             <div className="flex flex-col gap-5 w-full md:w-1/2">
                                 <h4 className="text-primary text-2xl md:text-3xl font-medium text-center">
                                     A little bit of jazz to make your day
