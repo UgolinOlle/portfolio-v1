@@ -11,22 +11,22 @@ import nicokaLogo from "@/public/nicoka-logo.png";
 
 export function Git() {
     return (
-        <div className="h-full flex flex-col items-center gap-7 text-white p-4">
-            <div className="flex justify-center items-center w-full gap-3 text-2xl md:text-5xl py-8">
+        <div className="h-full flex flex-col items-center gap-7 p-4">
+            <div className="flex justify-center items-center w-full gap-3 text-2xl md:text-5xl py-8 text-red">
                 <BsGit />
                 <h3 className="font-bold">Git</h3>
             </div>
-            <div className="flex space-x-2">
-                <Image
-                    src={nicokaLogo}
-                    alt="Nicoka Logo"
-                    width={30}
-                    height={25}
-                    className="rounded-lg"
-                />
-                <h4 className="md:text-2xl font-medium">・Nicoka</h4>
-            </div>
             <div className="flex flex-col gap-5 h-auto w-full">
+                <div className="flex space-x-2">
+                    <Image
+                        src={nicokaLogo}
+                        alt="Nicoka Logo"
+                        width={30}
+                        height={25}
+                        className="rounded-lg"
+                    />
+                    <h4 className="md:text-2xl font-medium">・Nicoka</h4>
+                </div>
                 <div>
                     <p>
                         <span className="font-bold flex items-center">
@@ -39,7 +39,7 @@ export function Git() {
                         integration with CI/CD pipelines.
                     </p>
                 </div>
-                <div className="flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 gap-3 border-t pt-10">
+                <div className="flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 gap-3">
                     <p>
                         <span className="font-bold flex items-center">
                             <FaCodeBranch className="font-normal" />
@@ -82,8 +82,8 @@ export function Git() {
                     </p>
                 </div>
             </div>
-            <div className="flex flex-col gab-8 pb-5 border-t pt-10">
-                <h4 className="text-2xl font-medium mb-5 text-center">
+            <div className="flex flex-col gab-8 pb-5 pt-10">
+                <h4 className="text-2xl font-medium mb-5">
                     <span className="font-bold">UO</span>
                     ・Personal
                 </h4>

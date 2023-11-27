@@ -7,13 +7,13 @@ import { FaDocker } from "react-icons/fa";
 
 export function Docker() {
     return (
-        <div className="h-full flex flex-col items-center gap-7 text-white p-4">
-            <div className="flex justify-center items-center w-full gap-3 text-2xl md:text-5xl py-8">
+        <div className="h-full flex flex-col items-center gap-7 p-4">
+            <div className="flex justify-center items-center w-full gap-3 text-2xl md:text-5xl py-8 text-blue">
                 <FaDocker />
                 <h3 className="font-bold">Docker</h3>
             </div>
-            <h4 className="text-white text-lg opacity-70">My works</h4>
-            <div className="flex flex-col md:grid md:grid-cols-2 gap-3 h-auto w-full">
+            <div className="flex flex-col md:grid md:grid-cols-2 md:flex-wrap items-start justify-start gap-8 h-auto w-full border-t pt-10 pb-10">
+                {" "}
                 {/* Nicoka */}
                 <div className="space-y-3 pl-3 transition-all p-3 h-auto">
                     <div className="flex space-x-2">
@@ -50,10 +50,9 @@ export function Docker() {
                         environment.
                     </p>
                 </div>
-
                 {/* Azerty Consulting */}
                 <div className="space-y-3 pl- transition-all 3 p-3 h-auto">
-                    <div className="flex space-x-2 justify-center items-center">
+                    <div className="flex space-x-2 justify-start items-center">
                         <Image
                             src={azertyLogo}
                             alt="Azerty Consulting Logo"
