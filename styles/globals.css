@@ -7,34 +7,6 @@
 @import "@radix-ui/colors/gray-dark.css";
 @import "@radix-ui/colors/gray-dark-alpha.css";
 
-:root {
-    /* Commons */
-    --blue: #0171e2;
-    --white: #ffffff;
-    --green: #32c732;
-    --red: #ff6961;
-    --purple: #800080;
-    --yellow: #ffbf00;
-
-    /* Grays */
-    --gray-primary: #f8f9fa; /* Lightest Gray */
-    --gray-secondary: #e9ecef; /* Light Gray */
-    --gray-third: #dee2e6; /* Medium Light Gray */
-    --gray-fourth: #ced4da; /* Medium Gray */
-    --gray-fifth: #adb5bd; /* Medium Dark Gray */
-    --gray-sixth: #6c757d; /* Dark Gray */
-    --gray-seventh: #495057; /* Darker Gray */
-    --gray-eighth: #343a40; /* Almost Black Gray */
-
-    /* Blacks */
-    --black-primary: #282b30; /* Lightest Black */
-    --black-secondary: #36393e; /* Light Black */
-    --black-third: #424549; /* Medium Black */
-    --black-fourth: #212529; /* Dark Black */
-    --black-fifth: #1b1e21; /* Darker Black */
-    --black-sixth: #121416; /* Darkest Black */
-}
-
 @layer base {
     /* --------------- THEME --------------- */
 

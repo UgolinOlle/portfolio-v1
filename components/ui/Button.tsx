@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import cn from "clsx";
 import { Link } from "./Link";
 
 type ButtonProps = {

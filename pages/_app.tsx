@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { NextPage } from "next";
-import { ReactElement, ReactNode, useEffect } from "react";
+import { ReactElement, ReactNode } from "react";
 
 import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from "framer-motion";
